@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>splitter</h1>
+      </div>
+      <div class="data">
+        <div class="col info">
+          <div class="input-data">
+            <label for="bill">Bill</label>
+            <div class="input-icons">
+              <i class="dollar icon"></i>
+              <input
+                type="text"
+                name="bill"
+                id="bill"
+                class="input-field"
+                placeholder="Bill total"
+                value="0"
+              />
+            </div>
+          </div>
+          <div>
+            <p>Select Tip %</p>
+            <div class="btn-holder">
+              <div class="row">
+                <button class="btn btn-primary js-btn" id="js-btn-5">5%</button>
+                <button class="btn btn-primary js-btn" id="js-btn-10">
+                  10%
+                </button>
+                <button class="btn btn-primary js-btn" id="js-btn-15">
+                  15%
+                </button>
+              </div>
+              <div class="row">
+                <button class="btn btn-primary js-btn" id="js-btn-25">
+                  25%
+                </button>
+                <button class="btn btn-primary js-btn" id="js-btn-50">
+                  50%
+                </button>
+                <button class="btn btn-secondary js-btn">Custom</button>
+              </div>
+            </div>
+          </div>
+          <div class="input-data">
+            <label for="people">Number of people:</label>
+            <div class="input-icons">
+              <i class="people icon"></i>
+              <input
+                type="text"
+                name="people"
+                id="people"
+                class="input-field"
+                placeholder="number of people"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col results">
+          <div>
+            <div class="row stretched">
+              <div class="col">
+                <p>Tip Amount</p>
+                <p class="dark-text">/ person</p>
+              </div>
+              <div class="amount" id="js-total-amount">$ 0.00</div>
+            </div>
+            <div class="row stretched">
+              <div class="col">
+                <p>Total</p>
+                <p class="dark-text">/ person</p>
+              </div>
+              <div class="amount" id="js-person-amount">$ 0.00</div>
+            </div>
+          </div>
+          <button class="btn selected full-width" id="js-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Andr&eacute;s Court</a>.
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
